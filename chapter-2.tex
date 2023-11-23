@@ -1,0 +1,116 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds, positioning, shapes.geometric}
+\usepackage{xcolor}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=red,      
+    urlcolor=red,
+    pdfpagemode=FullScreen,
+    }
+\urlstyle{same}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Chapter 2}
+\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section*{Editing C++ Code in Visual Studio}
+
+Are you new to coding in general? Then you need to use an editing tool!
+
+\textbf{C++} source code is just regular text files named with some special extension names, such as \textbf{.cpp}, \textbf{.h}, and so on. You can basically use Windows \textbf{Notepad} to open and edit C++ source code files. However, since Notepad is a basic editing tool that lacks functionalities, we recommend using \textbf{Visual Studio (VS)} as the code editor.
+
+Why use VS? VS is a feature-rich \textbf{integrated development environment (IDE)} that supports many aspects of software development. It empowers you to complete the entire development cycle in one place. You can use VS to create, edit, debug, test, and build your code. VS also has the most popular programming language compilers integrated with the installation package so that C++ source code can be directly compiled to be executable machinery code. Moreover, VS especially supports Unreal Engine and works well with the engine’s development environment.
+
+By following the step-by-step journey of this chapter, you will get to know the IDE’s user interface (UI), be capable of creating and writing C++ code, and learn how to build C++ solutions to generate standalone executables. This chapter includes the following sections:
+
+\begin{itemize}
+\item Launching VS
+\item Walking through the VS IDE’s UI
+\item Editing code in VS
+\item Practicing C++ coding
+\end{itemize}
+
+\subsection*{Technical requirements}
+
+To explore the creation of C++ projects and editing C++ code, it is necessary to have VS installed on your system.
+
+VS has both Windows and macOS versions. It also has Community, Professional, and Enterprise editions. The examples of this book are based on the VS 2022 Windows Community edition.
+
+Since VS is an IDE that you will use for C++ scripting, being familiar with the development environment and the scripting skills is a prerequisite.
+
+The code for this chapter can be found at \url{https://github.com/PacktPublishing/Unreal-Engine-5-Game-Development-with-C-Scripting/tree/main/Chapter02/MyCPP\_01}.
+
+\subsection*{Launching VS}
+
+In \textit{Chapter 1}, we went through the installation of VS, so you should already have installed VS on your system. Since VS is an independent application, you can launch it either from the \textbf{operating system (OS)} or in Unreal Engine.
+
+In Windows, simply search for \textbf{virtual studio} and pick the version of the IDE that you wish to launch.
+
+Now, let’s practice launching VS in Unreal Engine. Say we want to open the \textbf{MyShooterCharacter.cpp} file—you first need to find \textbf{MyShooter/All/C++ Classes/MyShooter} on the \textbf{Content Drawer}, and then you can double-click on the \textbf{MyShooterCharacter C++ Class} item.
+
+This operation will launch VS if it hasn’t been launched yet and open the \textbf{MyShooterCharacter.cpp} file in the editor. Now, you should have your Unreal game development environment installed and set up. The engine editor and VS are both open. Next, we’ll take a close look at the IDE’s UI.
+
+\subsection*{Walking through the VS IDE’s UI}
+
+\end{document}
