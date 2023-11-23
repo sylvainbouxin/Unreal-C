@@ -258,6 +258,23 @@ UE provides a very straightforward way to convert an existing Blueprint project 
 
 \begin{itemize}
 \item First of all, you have to create a Blueprint project, \textit{MyBPShoopter}, under \textbf{C:\\UEProjects} (you can choose a different path to create the new project). Use the same steps introduced in the \textit{Creating the MyShooter C++ project} section, but choose \textbf{BLUEPRINT} instead of \textbf{C++} for the creation of the \textit{MyBPShooter} project.
+\item Secondly, open the new project in UE5. Pay attention to the project tree; it doesn’t have the \textbf{C++ Classes} node at this stage.
+\item Select \textbf{Tools | New C++ Class} from the editor’s main menu, and then, in the \textbf{Add C++ Class} window, choose \textbf{Character} as the base class (a class that contains common attributes and methods that are shared by its derived classes) to create the \textbf{MyShooterCharacter} class. Once you click the \textbf{Next>} button, it will navigate to the \textbf{NAME YOUR NEW CHARACTER} screen.
+\item On the \textbf{NAME YOUR NEW CHARACTER} screen, type \textbf{MyBPShooterCharacter} into the \textbf{Name} field.
+Please pay attention to the path where the header and the source files will be placed. They look different from the \textit{MyShooter} project because the C++ node hasn’t been created yet. Don’t worry about it at the moment. Once the conversion job is done, the system will automatically move the files to the right place.
+\item After clicking the \textbf{Create Class} button, you will see a progress bar. Wait for the pop-up message, which indicates that the C++ class job has been added.
+\item Click the \textbf{OK} button. Now, you will see the message dialog, which asks you whether you want to edit the code. Choose \textbf{No} here.
+\item Shut down your UE editor and reopen \textbf{MyBPShooter}. When you see a dialog that asks whether you want to rebuild the project, answer \textbf{Yes} here.
+\end{itemize}
 
+When it is done, you will find the new \textbf{C++ Classes} node on the project tree, and the \textbf{MyShooterCharacter} class is already placed in the \textbf{MyBPShooter} folder:
+
+You may have noticed that some other files, such as \textbf{MyBPShooterGameMode} are missing, in comparison with the MyShooter project. That is because the Blueprint versions already exist, so the corresponding C++ versions are not automatically generated. You can choose to manually convert those blueprints to C++ classes only when necessary; otherwise, you just keep the blueprints.
+
+\subsection*{Summary}
+
+In this chapter, we introduced C++ and the advantages of using it for professional game development. Then, you practiced creating the new MyShooter C++ project and converting the MyBPShooter Blueprint project to a C++ project. Plus, you also set up the development environment with VS and the C++ solution files.
+
+In the next chapter, we will first walk through each part of the IDE’s user interface. Then, you will create a C++ project and practice writing some simple C++ code. Some code editing tricks will be introduced while editing your code.
 
 \end{document}
